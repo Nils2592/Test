@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://strut.io/dist/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="Cache-Control" content="max-age=0">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+		<meta http-equiv="Pragma" content="no-cache">
+		<title>Strut - Beta</title>
+		<link rel="stylesheet" href="http://strut.io/dist/styles/main.css">
+		<link rel="stylesheet" type="text/css" href="./Strut - Beta_files/built.css">
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="amd-app" src="./Strut - Beta_files/amd-app.js"></script></head>
+	<body class="">
+		<!--[IF IE]>
+			<div class="container">
+			<div class="alert alert-success">
+				Internet Explorer does not support the 3-D transitions required by <strong>Strut</strong>.
+				<br/>
+				<br/>
+				<strong>Strut</strong> currenly only works in <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a> and <a href="http://support.apple.com/kb/DL1531">Safari</a>.
+				<br/>
+				We do hope to support IE 10 sometime in the future.
+				<br/><br/>
+				Sorry for the inconvenience.
+			</div>
+			</div>
+		<![endif]-->
+		<script>
+		window.isOptimized = true;
+		if (!Function.prototype.bind) {
+			Function.prototype.bind = function(ctx) {
+		    	var fn;
+    			fn = this;
+    			return function() {
+      				return fn.apply(ctx, arguments);
+    			};
+  			};
+  		}
+		</script>
+		<script data-main="scripts/amd-app" src="./Strut - Beta_files/require.js"></script>
+		<div id="modals">
+		<div class="itemGrabber modal hide" aria-hidden="true" style="display: none;"><div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3>Bild einfügen</h3>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<div class="alert alert-error dispNone">
+  		<button class="close" data-dismiss="alert">×</button>
+  		The image URL you entered appears to be incorrect
+	</div>
+	<h4>URL:</h4><div class="form-inline"><input type="text" name="itemUrl">&nbsp;<div data-option="browse" class="btn">Browse</div>
+	<p><em>*Local images are currently uploaded to imgur.<br>We're working on changing this.</em></p></div>
+	<input type="file" style="display:none">
+	<h4>Preview:</h4>
+	<ul class="thumbnails">
+		<li class="span4">
+			<div class="thumbnail">
+				<img class="preview" width="360" height"268"="" src="./Strut - Beta_files/Nordex_N-90_Windkraftanlage.jpg">
+			</div>
+			<div class="progress active progress-striped dispNone">
+  				<div class="bar"></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="modal-footer">
+	<a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-primary ok btn-inverse">Bild einfügen</a>
+</div></div><div class="itemGrabber modal hide" aria-hidden="true" style="display: none;"><div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3>Video einfügen</h3>
+</div>
+<div class="modal-body" style="overflow: hidden"><div class="alert alert-success">Supports <strong>webm &amp; YouTube</strong>.<br>Try out: http://www.youtube.com/watch?v=vHUsdkmr-SM</div>
+	<div class="alert alert-error dispNone">
+  		<button class="close" data-dismiss="alert">×</button>
+  		The image URL you entered appears to be incorrect
+	</div>
+	<h4>URL:</h4><div class="form-inline"><input type="text" name="itemUrl">&nbsp;</div>
+	<input type="file" style="display:none">
+	<h4>Preview:</h4>
+	<ul class="thumbnails">
+		<li class="span4">
+			<div class="thumbnail">
+				<video class="preview" width="360" height"268"=""></video>
+			</div>
+			<div class="progress active progress-striped dispNone">
+  				<div class="bar"></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="modal-footer">
+	<a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-primary ok btn-inverse">Video einfügen</a>
+</div></div><div class="itemGrabber modal hide" aria-hidden="true" style="display: none;"><div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3>Webseite einfügen</h3>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<div class="alert alert-error dispNone">
+  		<button class="close" data-dismiss="alert">×</button>
+  		The image URL you entered appears to be incorrect
+	</div>
+	<h4>URL:</h4><div class="form-inline"><input type="text" name="itemUrl">&nbsp;</div>
+	<input type="file" style="display:none">
+	<h4>Preview:</h4>
+	<ul class="thumbnails">
+		<li class="span4">
+			<div class="thumbnail">
+				<iframe class="preview" width="360" height"268"=""></iframe>
+			</div>
+			<div class="progress active progress-striped dispNone">
+  				<div class="bar"></div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="modal-footer">
+	<a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-primary ok btn-inverse">Webseite einfügen</a>
+</div></div><div class="storageModal modal hide"><div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3 class="title">none</h3>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<ul class="nav nav-tabs">
+		
+			<li class="providerTab active"><a data-provider="localstorage">Local Storage</a></li>
+		
+			<li class="providerTab"><a data-provider="remoteStorage">Remote Storage</a></li>
+		
+	</ul>
+	<div class="tabContent">
+	<div class="fileBrowser"><div class="browserContent"><input type="text" class="fileName">
+<ul class="nav nav-pills nav-stacked">
+	
+</ul></div></div></div>
+</div>
+<div class="modal-footer">
+	<a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-primary ok btn-inverse">Ok</a>
+</div></div><div class="tabbedModal modal hide in" aria-hidden="false" style="display: block;"><div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3 class="title">Exportieren...</h3>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<ul class="nav nav-tabs">
+		
+			<li class="providerTab" data-provider=""><a>JSON</a></li>
+		
+			<li class="providerTab active" data-provider=""><a>Zip</a></li>
+		
+	</ul>
+	<div class="tabContent">
+	<div><div class="alert alert-info">The most effective way to archive your rendered presentation is to:<p></p><ol><li>Click <code>Preview</code></li><li>Press <code>Ctrl+S</code>(windows) or <code>⌘+S</code>(Mac) to save the entire presentation to disk.</li></ol><p></p></div></div></div>
+</div>
+<div class="modal-footer">
+	<a href="blob:http%3A//strut.io/7e36962b-bec5-4dfc-b50c-e872ba9e81fa" class="btn btn-primary ok btn-inverse" download="presentation-unnamed.json" data-downloadurl="application/json:presentation-unnamed.json:blob:http%3A//strut.io/7e36962b-bec5-4dfc-b50c-e872ba9e81fa"></a>
+</div></div></div>
+	
+<div class="dispNone"><input type="file"></div><div class="container-fluid"><div class="row-fluid header"><div class="navbar navbar-inverse span12">
+	<div class="navbar-inner">
+		<ul class="nav">
+			<li class="logo-holder">
+			<div class="logo-group btn-group"><a class="btn logo btn-plast dropdown-toggle" data-toggle="dropdown">
+	<span class="logo-bg"></span>
+    <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a>Neu </a></li><li><a>Öffnen </a></li><li><a>Speichern</a></li><li><a>Speichern als... </a></li><li class="divider"></li><li><a>Rückgängig<span class="label pull-right">Scale</span></a></li><li><a>Redo<span class="label pull-right dispNone"></span></a></li><li class="divider"></li><li><a>Geschnitten <span class="label pull-right">Ctrl+X</span></a></li><li><a>Kopieren <span class="label pull-right">Ctrl+C</span></a></li><li><a>Fügen <span class="label pull-right">Ctrl+V</span></a></li><li class="divider"></li><li><a>Importieren... </a></li><li><a>Exportieren... </a></li></ul></div></li>
+			<li class="divider-vertical">
+			</li>
+		</ul>
+		<ul class="nav" style="margin-left: 5%">
+			<li class="create-comp-buttons">
+				<div class="btn-group iconBtns">
+				<a class="btn btn-plast" data-comptype="TextBox"><i class="icon-text-width icon-white"></i>Text</a><a class="btn btn-plast" data-comptype="Image"><i class="icon-picture icon-white"></i>Bild</a><a class="btn btn-plast" data-comptype="Video"><i class="icon-film icon-white"></i>Video</a><a class="btn btn-plast" data-comptype="WebFrame"><i class="icon-globe icon-white"></i>Webseite</a></div>
+			</li>
+		</ul>
+		<ul class="nav theme-buttons">
+		<div header="[object Object]" modeid="slide-editor" activemode="[object Object]" class="themeProviders"><div class="dropdown btn-group iconBtns"><a class="btn btn-plast dropdown-toggle" data-toggle="dropdown">
+	<i class="icon-tint icon-white"></i>
+	Hintergrund</a>
+<ul class="dropdown-menu horizontalDropdown" role="menu" style="min-width: 127px; width: 127px">
+
+<li><a class="solid-bg-black thumbnail" alt="Black" data-class="solid-bg-black"></a></li>
+
+<li><a class="solid-bg-light thumbnail" alt="Light" data-class="solid-bg-light"></a></li>
+
+<li><a class="solid-bg-smoke thumbnail" alt="Smoke" data-class="solid-bg-smoke"></a></li>
+
+<li><a class="solid-bg-orange thumbnail" alt="Orange" data-class="solid-bg-orange"></a></li>
+
+<li><a class="solid-bg-yellow thumbnail" alt="Yellow" data-class="solid-bg-yellow"></a></li>
+
+<li><a class="solid-bg-grass thumbnail" alt="Grass" data-class="solid-bg-grass"></a></li>
+
+<li><a class="solid-bg-darkgreen thumbnail" alt="Dark Green" data-class="solid-bg-darkgreen"></a></li>
+
+<li><a class="solid-bg-sky thumbnail" alt="Sky" data-class="solid-bg-sky"></a></li>
+
+<li><a class="solid-bg-lavender thumbnail" alt="Lavender" data-class="solid-bg-lavender"></a></li>
+
+<li><a class="solid-bg-purple thumbnail" alt="Purple" data-class="solid-bg-purple"></a></li>
+
+<li><a class="solid-bg-salmon thumbnail" alt="Salmon" data-class="solid-bg-salmon"></a></li>
+
+<li><a class="nobg thumbnail" data-class="defaultbg"></a></li>
+</ul>
+</div></div></ul>
+		<ul class="nav pull-right">
+			<li class="divider-vertical">
+			</li>
+			<li class="mode-buttons">
+			<div class="btn-group iconBtns dispNone">
+	<a class="btn btn-plast">
+		<i class="icon-th-list icon-white"></i>
+		Folien
+	</a>
+</div><div class="btn-group iconBtns">
+	<a class="btn btn-plast">
+		<i class="icon-th-large icon-white"></i>
+		Übersicht
+	</a>
+</div><div class="btn-group iconBtns"><button class="btn btn-success act"><i class="icon-play icon-white"></i>Präsentieren</button>
+<button class="btn dropdown-toggle btn-success iconBtnsSplit" data-toggle="dropdown">
+  <span class="caret whiteCaret"></span>
+</button>
+<ul class="dropdown-menu">
+	
+    <li data-option="impress"><a>
+    		<span class="check" style="">✓</span>
+    		Impress
+    </a></li>
+    
+    <li data-option="bespoke"><a>
+    		<span class="check" style="visibility: hidden;">✓</span>
+    		Bespoke
+    </a></li>
+    
+</ul></div></li>
+		</ul>
+	</div>
+</div></div><div class="slideEditor row-fluid"><div class="slideWell"><div style="position: relative;"><div class="slideSnapshot solid-bg-sky active" style="z-index: 0;"><canvas></canvas>
+<span class="close-btn-red-20 removeBtn" title="Remove"></span>
+<span class="badge badge-inverse"> </span></div><div class="slideSnapshot solid-bg-sky" style="z-index: 0;"><canvas></canvas>
+<span class="close-btn-red-20 removeBtn" title="Remove"></span>
+<span class="badge badge-inverse"> </span></div></div><div class="wellContextMenu absolute" style="top: -5px; left: 54.5px;"><div class="addBtn btn btn-success"><center><i class="icon-plus icon-white"></i></center></div></div></div><div class="operatingTable"><div class="slideContainer solid-bg-sky" style="width: 1024px; height: 768px; margin-left: 188px; margin-right: 188px; -webkit-transform: scale(0.8203125);"><div class="component imageView" style="z-index: 312; top: -6px; left: -75px; -webkit-transform: rotate(0rad); width: 1174.9999999999998px; height: 780.4104477611938px;"><div class="content-scale" style="-webkit-transform: scale(0.27402052238805963, 0.27402052238805963);">
+<div class="content" style=""><img src="./Strut - Beta_files/Nordex_N-90_Windkraftanlage.jpg" width="4288" height="2848"></div>
+</div>
+<span class="topLabel label"> 
+	<span class="skewx" data-delta="skewX">↔</span>
+	<span class="align" data-option="x">↹</span>
+</span>
+<span class="leftLabel label"> 
+	<span class="align" data-option="y">↹</span>
+	<span class="skewy" data-delta="skewY">↔</span>
+</span>
+<span class="rightLabel label rotate" data-delta="rotate">↻</span>
+<span class="scale label" data-delta="scale">↔</span>
+<span class="close-btn-red-20 removeBtn" title="Remove"></span>
+<div class="positioningCtrls form-inline">
+	<span class="label leftposition">→</span>
+	<input class="position" type="text" data-option="x" value="-75">
+	<span class="label bottomposition">↑</span>
+	<input class="position" type="text" data-option="y" value="-6">
+</div>
+</div><div class="component textBox" style="z-index: 297; top: 347px; left: 682px; font-size: 64px;"><div class="content-scale" style="-webkit-transform: scale(1, 1);">
+<div class="content" style="" contenteditable="false"><font face="Ubuntu, sans-serif">Windkraft&nbsp;</font><br></div>
+</div>
+<span class="topLabel label"> 
+	<span class="skewx" data-delta="skewX">↔</span>
+	<span class="align" data-option="x">↹</span>
+</span>
+<span class="leftLabel label"> 
+	<span class="align" data-option="y">↹</span>
+	<span class="skewy" data-delta="skewY">↔</span>
+</span>
+<span class="rightLabel label rotate" data-delta="rotate">↻</span>
+<span class="scale label" data-delta="scale">↔</span>
+<span class="close-btn-red-20 removeBtn" title="Remove"></span>
+<div class="positioningCtrls form-inline">
+	<span class="label leftposition">→</span>
+	<input class="position" type="text" data-option="x" value="34">
+	<span class="label bottomposition">↑</span>
+	<input class="position" type="text" data-option="y" value="54">
+</div>
+</div><div class="component textBox" style="z-index: 310; top: 55px; left: 23px; font-size: 73px;"><div class="content-scale" style="-webkit-transform: scale(1, 1);">
+<div class="content" style="" contenteditable="false"><font face="Lato, sans-serif">Das BIK forscht:</font></div>
+</div>
+<span class="topLabel label"> 
+	<span class="skewx" data-delta="skewX">↔</span>
+	<span class="align" data-option="x">↹</span>
+</span>
+<span class="leftLabel label"> 
+	<span class="align" data-option="y">↹</span>
+	<span class="skewy" data-delta="skewY">↔</span>
+</span>
+<span class="rightLabel label rotate" data-delta="rotate">↻</span>
+<span class="scale label" data-delta="scale">↔</span>
+<span class="close-btn-red-20 removeBtn" title="Remove"></span>
+<div class="positioningCtrls form-inline">
+	<span class="label leftposition">→</span>
+	<input class="position" type="text" data-option="x" value="341.3333333333333">
+	<span class="label bottomposition">↑</span>
+	<input class="position" type="text" data-option="y" value="256">
+</div>
+</div></div></div></div></div><div class="etch-editor-panel" style="display: none; top: 80.1171875px; left: 503px;"><div class="btn-group"><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-bold" title="bold"><span>B</span></a><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-italic" title="italic"><span>I</span></a></div><div class="btn-group"><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-unordered-list" title="unordered list"><span></span></a><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-ordered-list" title="ordered list"><span></span></a></div><div class="btn-group"><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-justify-left" title="justify left"><i class="icon-align-left"></i></a><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-justify-center" title="justify center"><i class="icon-align-center"></i></a></div><div class="btn-group"><a href="./Strut - Beta_files/Strut - Beta.htm" class="btn btn-small etch-link" title="link"><span></span></a></div><div class="btn-group">
+	<button class="btn btn-inverse dropdown-toggle btn-small fontFamilyBtn" data-toggle="dropdown" title="Choose the font family"><span class="text">Lato</span><span class="caret"></span></button>
+	<ul class="dropdown-menu menuBarOption" data-option="fontFamily">
+		<li>
+                  <a class="lato" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Lato&#39;, sans-serif">Lato</a>
+                  <a class="ubuntu" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Ubuntu&#39;, sans-serif">Ubuntu</a>
+                  <a class="abril" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Abril Fatface&#39;, cursive">Abril</a>
+                  <a class="hammersmith" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Hammersmith One&#39;, sans-serif">Hammersmith One</a>
+                  <a class="fredoka" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Fredoka One&#39;, cursive">Fredoka One</a>
+                  <a class="gorditas" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Gorditas&#39;, cursive">Gorditas</a>
+                  <a class="pressstart" href="./Strut - Beta_files/Strut - Beta.htm" data-value="&#39;Press Start 2P&#39;, cursive">Press Start 2P</a>
+		</li>
+	</ul>
+</div><div class="btn-group">
+	<a class="btn btn-small btn-inverse dropdown-toggle" data-toggle="dropdown" title="Choose the font size"><span class="text fontSizeReadout">73</span>
+		<span class="caret"></span></a>
+	<ul class="dropdown-menu menuBarOption" data-option="fontSize">
+		<li>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="144">144</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="96">96</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="72">72</a>
+			<a href="./Strut - Beta_files/Strut - Beta.htm" data-value="64">64</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="48">48</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="36">36</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="24">24</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="16">16</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="12">12</a>
+                  <a href="./Strut - Beta_files/Strut - Beta.htm" data-value="8">8</a>
+		</li>
+     	</ul>
+</div><div class="btn-group"><input class="color-chooser colorpicker etch-color" style="display: none;"><div class="sp-replacer sp-dark"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(51, 51, 51);"></div></div><div class="sp-dd">▼</div></div></div></div><div class="sp-container sp-dark sp-hidden" style="position: absolute; top: 117.296875px; left: 827px;"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"><div class="sp-cf sp-palette-row sp-palette-row-0"></div><div class="sp-cf sp-palette-row sp-palette-row-selection"><span title="rgb(51, 51, 51)" data-color="rgb(51, 51, 51)" class="sp-thumb-el sp-thumb-dark sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(51, 51, 51);"></span></span><span title="rgb(25, 69, 227)" data-color="rgb(25, 69, 227)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(25, 69, 227);"></span></span><span title="rgb(68, 41, 41)" data-color="rgb(68, 41, 41)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(68, 41, 41);"></span></span><span title="rgb(211, 177, 177)" data-color="rgb(211, 177, 177)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(211, 177, 177);"></span></span><span title="rgb(255, 0, 0)" data-color="rgb(255, 0, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 0, 0);"></span></span><span title="rgb(153, 148, 190)" data-color="rgb(153, 148, 190)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(153, 148, 190);"></span></span><span title="rgb(25, 21, 49)" data-color="rgb(25, 21, 49)" class="sp-thumb-el sp-thumb-dark"><span class="sp-thumb-inner" style="background-color:rgb(25, 21, 49);"></span></span></div></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div class="sp-color" style="background-color: rgb(255, 0, 0);"><div class="sp-sat"><div class="sp-val"><div class="sp-dragger" style="top: 103.8px; left: -5px;"></div></div></div></div><div class="sp-hue"><div class="sp-slider" style="top: -3px;"></div></div></div><div class="sp-alpha" style=""><div class="sp-alpha-inner"><div class="sp-alpha-handle" style="left: 169px;"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" type="text" spellcheck="false"></div><div class="sp-initial sp-thumb sp-cf"><div class="sp-cf sp-palette-row-initial"><span title="rgb(51, 51, 51)" data-color="rgb(51, 51, 51)" class="sp-thumb-el sp-thumb-dark sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(51, 51, 51);"></span></span><span title="rgb(51, 51, 51)" data-color="rgb(51, 51, 51)" class="sp-thumb-el sp-thumb-dark sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(51, 51, 51);"></span></span></div></div></div></div><div class="modal-backdrop  in"></div></body></html>
